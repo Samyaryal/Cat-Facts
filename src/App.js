@@ -3,7 +3,7 @@ import Title from "./components/Title";
 import "./App.css";
 import Spinner from "./components/Spinner";
 import Form from "./components/Form";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class App extends Component {
   componentDidMount() {
     this.fetchData();
   }
-  fetchData = (num = 5 ) => {
+  fetchData = (num = 5) => {
     fetch(
       `https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=${num}`
     )
@@ -39,7 +39,7 @@ class App extends Component {
   };
 
   displayData = () => {
-    const { isLoaded, facts, error } = this.state; // object destructure
+    const { isLoaded, facts, error } = this.state;
     if (error) {
       return (
         <div className="alert alert-danger" role="alert">
@@ -49,54 +49,39 @@ class App extends Component {
     } else if (!isLoaded) {
       return (
         <div>
-          {" "}
           <Spinner />
         </div>
       );
     } else {
       return (
-        <div className="App">
+        <div className="container-fluid">
           {facts.map(facts => (
-            <div className="fact-link" key={facts._id}>
-              <ul className="list-group">
-                <li className="list-group-item list-group-item-primary">
-                  {facts.text}
-                </li>
-                <li className="list-group-item list-group-item-secondary">
-                  {`https://cat-fact.herokuapp.com/facts/${facts._id}`}
-                </li>
-              </ul>
-              
-            </div>
+            <ul className="list-group">
+              <li className="list-group-item list-group-item-primary">
+                {facts.text}
+              </li>
+              <li className="list-group-item list-group-item-secondary">
+                <a href={`https://cat-fact.herokuapp.com/facts/${facts._id}`}>
+                  {" "}
+                  link => {`https://cat-fact.herokuapp.com/facts/${facts._id}`}{" "}
+                </a>
+              </li>
+              <br />
+            </ul>
           ))}
         </div>
       );
     }
   };
   render() {
-    
     return (
-      <div className="background">
-        <div className="container-wall">
-          <Title />
-          <Form fetch={this.fetchData}/> 
-          
-          <div>{this.displayData()}</div>
-            
-        </div> 
-          <Footer />
-            
+      <div className="wrapper">
+        <Title />
+        <Form fetch={this.fetchData} />
+        {this.displayData()}
+        <Footer />
       </div>
-      
-       
-      
     );
   }
 }
 export default App;
-
-// <div>
-//                  <button className="btn btn-primary" onClick = {this.fetchData}>
-//                  Click here to generate new facts!
-//                   </button>
-//                  </div>

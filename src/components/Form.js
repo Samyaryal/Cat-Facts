@@ -7,18 +7,16 @@ class Form extends React.Component {
     e.preventDefault();
     const { fetch } = this.props;
 
-    fetch (this.state.number);
+    fetch(this.state.number);
   };
-  
+
   render() {
     return (
-      <div className="form-group">
-        <form  onSubmit={this.UponSubmit}>
-          <label className ="question-fact">How many Facts (2 - 10)?</label>
-          <div >
-          <div >
-          <input
-              className="col-type"
+      <div className="question-fact">
+        <form onSubmit={this.UponSubmit}>
+          <label>How many Facts (2 - 10)?</label>
+          <div>
+            <input
               type="number"
               value={this.state.number}
               min="2"
@@ -27,16 +25,11 @@ class Form extends React.Component {
               onChange={event => this.setState({ number: event.target.value })}
             />
           </div>
-          <br/>
-          <div >
-          <button className = "button-click">            
-              Click me to generate new facts
-            </button>
+          <br />
+          <div className="button-click">
+            <button>Generate new facts</button>
           </div>
-          
-            
-            
-          </div>
+          <br />
         </form>
       </div>
     );
@@ -45,4 +38,4 @@ class Form extends React.Component {
 
 export default Form;
 
-// onSubmit={this.UponSubmit}
+

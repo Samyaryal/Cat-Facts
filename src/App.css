@@ -1,47 +1,55 @@
-.container-walll{
-  position: center;
-  justify-content: center;
+
+.wrapper{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background: #D7D8DB;
+  background: -webkit-linear-gradient(to right, #B8DAFF, #D7D8DB);
+  background: linear-gradient(to right, rgb(28, 81, 138), #D7D8DB);
+
+
+
 }
-.background{
-  background-color: blanchedalmond;
+.button-click  button {
+ border: 3px solid rgb(28, 81, 138);
+ border-radius: 5px;
+ transition-duration: 0.4s;
+ background-color: rgb(68, 137, 211);
 }
-.button-click{
-  color: blueviolet;
-  background-color: yellow;
-}
-.header{
+.button-click  button:hover {
+ opacity:0.8;
+ color:white;
+ }
+
+ .button-click  button:active {
+  opacity:1;
+  color:red;
+  }
+.header {
+  text-align: center;
   font-size: 70px;
-  
-  
   position: relative;
-  top: 20px;
-  border-style: solid none none none;
-  border-width: thick;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 11px -1px rgba(65, 66, 73, 1);
-    -moz-box-shadow: 0px 0px 11px -1px rgba(65, 66, 73, 1);
-   
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    margin: auto;
+  margin: auto;
 }
 .image{
-  padding-top: 40px;
+  padding-top: 30px; 
 }
-.lead-para{
+
+p{
   font-weight: bold;
   font-size: 30px;
 }
-.col-type{
-  height: 40px;
-  width: 60px;
-  font-size: 20px;
-  border-radius: 7%;
-}
-.question-fact{
+.question-fact label {
   font-size: 20px;
 }
+.question-fact input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+}
+
 .footer {
   background-color: #303841;
   display: flex;
