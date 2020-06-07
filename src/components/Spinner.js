@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-export default () => (
-    <div class="spinner-grow" role="status">
-    <span class="sr-only">Loading...</span>
-    </div>
-);
+const Spinner = () => <div className="spinner-border text-danger"></div>;
+
+export default Spinner;

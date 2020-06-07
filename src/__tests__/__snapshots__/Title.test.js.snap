@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component should be rendered 1`] = `
+<div>
+  <h1>
+    Cat Fact
+  </h1>
+  <img
+    alt="cat-fact"
+  />
+  <p>
+    Here are somee intersting facts about cat
+  </p>
+</div>
+`;
