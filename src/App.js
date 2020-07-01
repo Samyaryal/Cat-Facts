@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Title from "./components/Title";
+//import Title from "./components/Title";
+import cat from "./image/cat.png";
 import "./App.css";
 import Spinner from "./components/Spinner";
 import Form from "./components/Form";
@@ -62,8 +63,8 @@ class App extends Component {
               </li>
               <li className="list-group-item list-group-item-secondary">
                 <a href={`https://cat-fact.herokuapp.com/facts/${facts._id}`}>
-                  {" "}
-                  link => {`https://cat-fact.herokuapp.com/facts/${facts._id}`}{" "}
+                 
+                  link => {`https://cat-fact.herokuapp.com/facts/${facts._id}`}
                 </a>
               </li>
               <br />
@@ -76,8 +77,17 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <Title />
+      <div className="title">
+      <h1>Cat Fact</h1>
+      <img
+        src={cat}
+        alt="cat_pic"
+        className="card-img-top"
+        style={{ height: "250px", width: "320px" }}
+      />
+      <p>Some interesting facts about cat:</p>
         <Form fetch={this.fetchData} />
+        </div>
         {this.displayData()}
         <Footer />
       </div>
