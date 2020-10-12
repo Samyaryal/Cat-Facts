@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Link to the solution: https://github.com/Samyaryal/Cat-Facts
 
@@ -12,3 +13,10 @@ This was my first time writing any test, however going through the documentation
 Also, I managed to show the error message nicely in the UI.
 
 App for the production mode:  A new branch is created in the git called “production” which has “build files” along with server.js and is ready for the deployment.
+=======
+Link to the solution: https://github.com/Samyaryal/Cat-Facts
+
+To start the project => npm start
+
+
+>>>>>>> 93fa5ca31cccb7f8c9c70d3f127f71992f96b2d9
