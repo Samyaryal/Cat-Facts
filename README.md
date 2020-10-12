@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 Link to the solution: https://github.com/Samyaryal/Cat-Facts
 
