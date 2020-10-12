@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Cat-Facts/static/css/main.dfc658e5.chunk.css",
+    "main.js": "/Cat-Facts/static/js/main.e3141900.chunk.js",
+    "runtime-main.js": "/Cat-Facts/static/js/runtime-main.6f59e2d4.js",
+    "static/css/2.620ed6e8.chunk.css": "/Cat-Facts/static/css/2.620ed6e8.chunk.css",
+    "static/js/2.4845e9d7.chunk.js": "/Cat-Facts/static/js/2.4845e9d7.chunk.js",
+    "index.html": "/Cat-Facts/index.html",
+    "precache-manifest.0e40730e5efad74822db115dd20ccd00.js": "/Cat-Facts/precache-manifest.0e40730e5efad74822db115dd20ccd00.js",
+    "service-worker.js": "/Cat-Facts/service-worker.js",
+    "static/js/2.4845e9d7.chunk.js.LICENSE.txt": "/Cat-Facts/static/js/2.4845e9d7.chunk.js.LICENSE.txt",
+    "static/media/cat.png": "/Cat-Facts/static/media/cat.ba74bd7b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f59e2d4.js",
+    "static/css/2.620ed6e8.chunk.css",
+    "static/js/2.4845e9d7.chunk.js",
+    "static/css/main.dfc658e5.chunk.css",
+    "static/js/main.e3141900.chunk.js"
+  ]
+}
